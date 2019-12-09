@@ -1,0 +1,13 @@
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvzuOrMwRVvzkzuJrG-8fvNpBcIxxy_lw&callback=initMap"
+  type="text/javascript"></script>
+
+<script>
+function showPosition(position) {
+  var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+  var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=
+  "+latlon+"&zoom=14&size=400x300&sensor=false&key=AIzaSyDvzuOrMwRVvzkzuJrG-8fvNpBcIxxy_lw";
+
+  document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+}
+</script>
